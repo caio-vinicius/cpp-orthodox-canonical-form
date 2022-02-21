@@ -6,7 +6,7 @@ class X {
     X(void);
     ~X(void);
     X &operator=(X const &rhs);
-    X(ClapTrap const &src);
+    X(X const &src);
 };
 
 #endif
