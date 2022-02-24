@@ -22,7 +22,7 @@ $(OBJECTS)/%.o: $(SOURCES)/%.cpp
 	g++ $(CCFLAGS) -MMD -c $< -o $@
 
 clean:
-	rm -f $(OBJECTS_FILES)
+	rm -f $(OBJECTS_FILES) $(DEPENDENCIES_FILES)
 
 fclean: clean
 	rm -f $(NAME)
